@@ -2,5 +2,28 @@ Contains data files used in "DNA methylation landscapes of 1538 breast cancers r
 
 Data files:
 #################################################
-all_norm_meth.csv
+promoter_avg_meth_raw.csv
 #################################################
+Average methylation of promoters defined as follows:
+1. Promoter = 500bp upstream, 50 downstream of Transcription Start Site (TSS).
+2. Had coverage >= 20 in 70% of the tumor samples and 70% of the normal samples.
+
+#################################################
+promoter_avg_meth_norm.csv
+#################################################
+Promoter methylation as promoter_avg_meth_raw.csv after TME (tumor microenvironment) normalisation using Methylayer.
+
+
+#################################################
+genomic_avg_meth_raw.csv
+#################################################
+Average methylation of all MSP1 fragments defined as follows:
+1. Were not on a promoter
+2. Were at least 10 bp from an exon
+3. Had coverage >= 20 in 70% of the tumor samples and 70% of the normal samples.
+
+
+#################################################
+genomic_avg_meth_norm.csv
+#################################################
+Genomic methylation as genomic_avg_meth_raw.csv after TME (tumor microenvironment) normalisation using Methylayer.
